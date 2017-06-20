@@ -22,8 +22,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+// Package ifnil provides a type-safe way to test variables for nil and substitute a default akin to SQL's coalesce function.
 package ifnil
 
+// Bool returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Bool(arg *bool, def bool) bool {
 	if arg == nil {
 		return def
@@ -31,6 +33,7 @@ func Bool(arg *bool, def bool) bool {
 	return *arg
 }
 
+// Rune returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Rune(arg *rune, def rune) rune {
 	if arg == nil {
 		return def
@@ -38,6 +41,7 @@ func Rune(arg *rune, def rune) rune {
 	return *arg
 }
 
+// String returns def if arg is nil, otherwise it returns the value pointed to by arg
 func String(arg *string, def string) string {
 	if arg == nil {
 		return def
@@ -45,6 +49,7 @@ func String(arg *string, def string) string {
 	return *arg
 }
 
+// Int returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Int(arg *int, def int) int {
 	if arg == nil {
 		return def
@@ -52,6 +57,7 @@ func Int(arg *int, def int) int {
 	return *arg
 }
 
+// Int8 returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Int8(arg *int8, def int8) int8 {
 	if arg == nil {
 		return def
@@ -59,6 +65,7 @@ func Int8(arg *int8, def int8) int8 {
 	return *arg
 }
 
+// Int16 returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Int16(arg *int16, def int16) int16 {
 	if arg == nil {
 		return def
@@ -66,6 +73,7 @@ func Int16(arg *int16, def int16) int16 {
 	return *arg
 }
 
+// Int32 returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Int32(arg *int32, def int32) int32 {
 	if arg == nil {
 		return def
@@ -73,6 +81,7 @@ func Int32(arg *int32, def int32) int32 {
 	return *arg
 }
 
+// Int64 returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Int64(arg *int64, def int64) int64 {
 	if arg == nil {
 		return def
@@ -80,6 +89,7 @@ func Int64(arg *int64, def int64) int64 {
 	return *arg
 }
 
+// Uint returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Uint(arg *uint, def uint) uint {
 	if arg == nil {
 		return def
@@ -87,6 +97,7 @@ func Uint(arg *uint, def uint) uint {
 	return *arg
 }
 
+// Bool returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Uint8(arg *uint8, def uint8) uint8 {
 	if arg == nil {
 		return def
@@ -94,6 +105,7 @@ func Uint8(arg *uint8, def uint8) uint8 {
 	return *arg
 }
 
+// Uint16 returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Uint16(arg *uint16, def uint16) uint16 {
 	if arg == nil {
 		return def
@@ -101,6 +113,7 @@ func Uint16(arg *uint16, def uint16) uint16 {
 	return *arg
 }
 
+// Uint32 returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Uint32(arg *uint32, def uint32) uint32 {
 	if arg == nil {
 		return def
@@ -108,6 +121,7 @@ func Uint32(arg *uint32, def uint32) uint32 {
 	return *arg
 }
 
+// Uint64 returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Uint64(arg *uint64, def uint64) uint64 {
 	if arg == nil {
 		return def
@@ -115,6 +129,7 @@ func Uint64(arg *uint64, def uint64) uint64 {
 	return *arg
 }
 
+// Float32 returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Float32(arg *float32, def float32) float32 {
 	if arg == nil {
 		return def
@@ -122,6 +137,7 @@ func Float32(arg *float32, def float32) float32 {
 	return *arg
 }
 
+// Float64 returns def if arg is nil, otherwise it returns the value pointed to by arg
 func Float64(arg *float64, def float64) float64 {
 	if arg == nil {
 		return def
